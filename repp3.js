@@ -2,14 +2,14 @@
 // .then(open => open.json())
 // .then(data)
 
-
+// https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
 
 document.getElementById("button").addEventListener('click',() => {
     let inputValue = document.getElementById('inputName').value
     let details  = document.getElementById("details")
     details.inncherHTML = ""
     // 
-    fetch(`https:www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`)
+    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`)
     .then(response => response.json())
     .then(data => {
         // 
